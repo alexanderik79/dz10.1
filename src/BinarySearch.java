@@ -4,17 +4,17 @@ public class BinarySearch {
         int first = 0;
         int last = numbers.length - 1;
 
-        while (first<=last) {
+        while (first<last) {
             int middlePoint = (first + last) / 2;
             int middleNumber = numbers[middlePoint];
             if (num == middleNumber) {
                 return middlePoint;
             }
             else if (num < middleNumber) {
-                last = middlePoint;
+                last = middlePoint-1;
             }
             else if (num > middleNumber) {
-                first = middlePoint;
+                first = middlePoint+1;
             }
         }
         return -1;

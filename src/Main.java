@@ -27,7 +27,7 @@ public class Main {
         BinarySearch binarySearch = new BinarySearch();
         int [] numbers2 = {12,22,33,100,110,222,333,444,566,666,777,888};
         int searchNum = 100;
-        System.out.print("\nBinarySearch  ");
+        System.out.println("\nBinarySearch");
         PrintArray.printArray(numbers2);
         System.out.println("\nNumber "+searchNum+" at index #: "+
                 binarySearch.binarySearch(numbers2, searchNum)+
